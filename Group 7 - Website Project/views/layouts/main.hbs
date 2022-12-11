@@ -1,0 +1,52 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"/>
+    <title>Groovespot</title>
+	<link rel="stylesheet" href="/layout.css">
+	<?xml version="1.0"?>
+	<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+	<header>
+		<a href="/"><img class="logo" src="/logo-black.png" alt="logo"/></a>
+      <div class="input-container">
+        <img src="/search-icon.png" alt="search icon" />
+        <input type="text" placeholder="What are you looking for?" />
+      </div>
+      <div class="side-buttons">
+        <a href="liked.html"><div class="text-button">
+            <img src="/heart-icon.png" alt="heart icon" />
+            <h5>Liked</h5>
+          </div>
+        </a>
+        <a href="contacts">
+          <div class="text-button">
+            <img src="/user-icon.png" alt="user icon" />
+            <h5>Contacts</h5>
+          </div>
+        </a>
+        <a href="/users">
+            <div class="text-button">
+              <img src="{{user.image}}" alt="user icon" />
+              <h5>Log out</h5>
+            </div>
+          </a>
+      </div>
+	</header>
+
+	<main>
+		{{{body}}}
+	</main>
+
+    <footer>
+      <p>© 2022. Mira Pop, Noé Serwy, Andrea Makarová</p>
+    </footer>
+
+</body>

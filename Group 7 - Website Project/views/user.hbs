@@ -1,0 +1,18 @@
+{{#if user}}
+	<p>
+		{{#if user}}
+		<h3>
+			<span>Hello {{user.name}}</span>, learn some facts about {{user.artistName}}.
+    	</h3>		
+    <section class="cards">
+      <div class="container card selected">
+        <img src="{{user.artistImg}}" alt="" />
+        <h2>{{user.artistName}}</h2>
+        <button class="tertiary-button" onclick="location.href='/users/{{user.id}}/music';">More info</button>
+      </div>							
+		{{/if}}
+	</p>
+{{else}}
+	<h1>Not found</h1>
+	<p>A user with that id does not exist.</p>
+{{/if}}

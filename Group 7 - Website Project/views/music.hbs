@@ -1,0 +1,15 @@
+<div class="modal">
+        <div class="modal-card">
+          <img src="{{user.artistImg}}" alt="" />
+        	<div class="text">
+            	<h2>{{user.artistName}}</h2>
+				<div class="information">
+					<!-- this part will come from open source data -->
+					<p>Genre: <span>{{user.artistGenre}}</span></p>
+					<p>Quick description: <span>{{user.artistDesc}}</span></p>
+					<p>yes ->{{id}}</p>
+				</div>
+        	</div>
+			<button class="secondary-button" onclick="location.href='/users/{{user.id}}'">Close</button>
+        </div>
+</div>

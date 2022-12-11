@@ -1,0 +1,46 @@
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Noe a schema:Person;
+	schema:identifier "noe_serwy";
+	schema:name "Noe Serwy";
+	schema:image "/th.jpeg";
+	schema:seeks [	
+		a schema:MusicGroup;
+			schema:name "Macklemore";
+			schema:identifier "macklemore";
+			schema:image "";
+			schema:description "";
+			schema:genre "";
+			schema:title "Thrift Shop";
+	].
+
+:Andrea a schema:Person;
+	schema:identifier "andrea_makarova";
+	schema:name "Andrea Makarova";
+	schema:image "/cat.jpeg";
+	schema:seeks [
+		a schema:MusicGroup;
+		schema:name "Alec Benjamin";
+		schema:identifier "alec_benjamin";
+		schema:image "";
+		schema:description "";
+		schema:genre "";
+		schema:title "";
+	].
+
+:Mira a schema:Person;
+	schema:identifier "mira_pop";
+	schema:name "Mira Pop";
+	schema:image "/Molly.png";
+	schema:seeks [
+		a schema:MusicGroup;
+		schema:name "Rosalia";
+		schema:identifier "rosalia";
+		schema:image "";
+		schema:description "";
+		schema:genre "";
+		schema:title "";
+	].
+
